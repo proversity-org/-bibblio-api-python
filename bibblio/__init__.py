@@ -9,12 +9,6 @@ client_id = ''
 client_secret = ''
 access_token = ''
 
-# Bibblio API Urls
-bibblio_url = 'https://api.bibblio.org'
-token_url = '/token'
-enrichment_url = '/content-items'
-metadata_url = '/metadata'
-
 
 class Token:
 
@@ -40,8 +34,8 @@ class Enrichment:
 	@classmethod
 	def update_content_item(self, content_item_id, payload):
 		return enrichment.update_content_item(
-			access_token, 
-			content_item_id, 
+			access_token,
+			content_item_id,
 			payload
 		)
 
