@@ -1,3 +1,5 @@
+<img src="https://www.proversity.org/img/apple-touch-icon.png" width="50px"> [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://proversity.org)
+
 # Bibblio API Python
 Python wrapper of Bibblio API
 
