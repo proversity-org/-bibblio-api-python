@@ -1,4 +1,4 @@
-<img src="https://www.proversity.org/img/apple-touch-icon.png" width="50px"> [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://proversity.org)
+<img src="https://avatars2.githubusercontent.com/u/13437736?v=3&s=200" width="50px"> [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://proversity.org)
 
 # Bibblio API Python
 Python wrapper of Bibblio API
