@@ -26,7 +26,7 @@ bibblio.client_secret = 'YOUR_CLIENT_SECRET'
 get access_token
 
 ```python
-bibblio.access_token = bibblio.Token.get_access_token()
+bibblio.access_token = bibblio.Token.get_access_token()['access_token']
 ```
 
 * the access token has a duration of 5 minutes, remember to update it.
