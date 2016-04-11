@@ -5,17 +5,27 @@ Python wrapper of Bibblio API
 ```pip install bibblio```
 
 ## Configuration
-```import bibblio```
+```python
+import bibblio
+```
 
 set client_id and client_secret
 
-```bibblio.client_id = '1234'```
+```python
+bibblio.client_id = '1234'
+```
 
-```bibblio.client_secret = '1234567890'```
+```python
+bibblio.client_secret = '1234567890'
+```
 
 get access_token
 
-```bibblio.access_token = bibblio.Token.get_access_token()```
+```python
+bibblio.access_token = bibblio.Token.get_access_token()
+```
+
+* the access token has a duration of 5 minutes, remember to update it.
 
 ## Usage
 
@@ -27,18 +37,32 @@ For more information use [Bibblio API Documentation](http://docs.bibblio.apiary.
 
 ### Enrichment
 
-```bibblio.Enrichment.create_content_item(payload)```
+```python
+response = bibblio.Enrichment.create_content_item(payload)
+```
 
-```bibblio.Enrichment.get_content_items(limit=10, page=1)```
+```python
+response = bibblio.Enrichment.get_content_items(limit=10, page=1)
+```
 
-```bibblio.Enrichment.get_content_item(content_item_id)```
+```python
+response = bibblio.Enrichment.get_content_item(content_item_id)
+```
 
-```bibblio.Enrichment.update_content_item(content_item_id, payload)```
+```python
+response = bibblio.Enrichment.update_content_item(content_item_id, payload)
+```
 
-```bibblio.Enrichment.delete_content_item(content_item_id)```
+```python
+response = bibblio.Enrichment.delete_content_item(content_item_id)
+```
 
-```bibblio.Enrichment.metadata(text)```
+```python
+response = bibblio.Enrichment.metadata(text)
+```
 
 ### Discovery
 
-```bibblio.Discovery.recommendations(content_item_id)```
+```python
+response = bibblio.Discovery.recommendations(content_item_id)
+```
