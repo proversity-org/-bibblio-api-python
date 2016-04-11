@@ -3,6 +3,8 @@
 # Bibblio API Python
 Python wrapper of Bibblio API
 
+Register in [Bibblio](bibblio.org) and get your CLIENT_ID and CLIENT_SECRET
+
 ## Install
 ```pip install bibblio```
 
@@ -14,11 +16,11 @@ import bibblio
 set client_id and client_secret
 
 ```python
-bibblio.client_id = '1234'
+bibblio.client_id = 'YOUR_CLIENT_ID'
 ```
 
 ```python
-bibblio.client_secret = '1234567890'
+bibblio.client_secret = 'YOUR_CLIENT_SECRET'
 ```
 
 get access_token
