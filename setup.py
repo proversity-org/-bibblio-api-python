@@ -1,35 +1,47 @@
-#!/usr/bin/python
-#coding: utf-8
+#!/usr/bin/env python
+# coding:utf-8
 
-from setuptools import setup, find_packages
+from codecs import open
+from setuptools import setup
 
-version = "1.0"
-author = "Proversity.org Ltd"
+packages = [
+    'bibbliothon'
+]
+
+requires = ['requests']
+
+name = 'bibbliothon'
+version = '1.0.0'
+description = 'Python wrapper for Bibblio API.'
+author = 'José Antonio González'
+author_email = 'antonio@proversity.org'
+license = 'MIT License'
+
+with open('README.rst', 'r', 'utf-8') as f:
+    readme = f.read()
+with open('HISTORY.rst', 'r', 'utf-8') as f:
+    history = f.read()
 
 setup(
-    name='bibblio',
+    name=name,
     version=version,
+    description=description,
+    long_description=readme + '\n\n' + history,
     author=author,
-    author_email='antonio@proversity.org',
-    url='http://docs.bibblio.apiary.io/',
-    description='Python wrapper of Bibblio API',
-    long_description='Python wrapper of Bibblio API',
-    download_url='https://github.com/proversity-org/bibblio-api-python/archive/master.zip',
-    classifiers=[
+    author_email=author_email,
+    url='https://github.com/proversity-org/bibblio-api-python',
+    packages=packages,
+    package_data={'': ['LICENSE']},
+    package_dir={'bibbliothon': 'bibbliothon'},
+    include_package_data=True,
+    install_requires=requires,
+    license=license,
+    zip_safe=False,
+    classifiers=(
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Natural Language :: English',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Software Development :: Build Tools',
-        'License :: OSI Approved :: MIT License',
-        ],
-    packages=find_packages(),
-    install_requires=[
-        'requests',
-    ],
-    license='MIT License',
-    keywords='Proversity.org Bibblio API Python wrapper',
-    include_package_data=True,
-    zip_safe=True,
+        'License :: OSI Approved :: MIT',
+        'Programming Language :: Python'
+    )
 )

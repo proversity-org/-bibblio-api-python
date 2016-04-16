@@ -1,7 +1,7 @@
-
+#!/usr/bin/env python
 # coding:utf-8
 
-# helpers
+# Helpers
 def construct_content_items_url(enrichment_url, limit, page):
 
 	limit_query = "limit="
@@ -51,15 +51,3 @@ def construct_content_item_url(enrichment_url, content_item_id):
 def construct_recommendations_url(enrichment_url, content_item_id):
 
 	return enrichment_url + '/' + str(content_item_id) + '/recommendations'
-
-
-def create_random_payload(name):
-
-	payload = {
-	    "name": name,
-	    "url": "http://example.com/path/to/" + str(name),
-	    "text": name,
-        "description": "Air pollution consists of chemicals or particles in the air that can harm the health of humans, animals, and plants. It also damages buildings."
-  	}
-
-  	return payload
