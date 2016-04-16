@@ -19,14 +19,12 @@ license = 'MIT License'
 
 with open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
-with open('HISTORY.rst', 'r', 'utf-8') as f:
-    history = f.read()
 
 setup(
     name=name,
     version=version,
     description=description,
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n',
     author=author,
     author_email=author_email,
     url='https://github.com/proversity-org/bibblio-api-python',
@@ -41,7 +39,7 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Natural Language :: English',
-        'License :: OSI Approved :: MIT',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python'
     )
 )
