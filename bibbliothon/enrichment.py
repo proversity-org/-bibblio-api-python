@@ -6,10 +6,7 @@ import json
 import requests
 
 # Bibblio Python imports
-from helpers import construct_content_item_url,\
-					construct_content_items_url,\
-					create_random_payload
-
+from helpers import construct_content_item_url, construct_content_items_url
 from urls import enrichment_url, metadata_url
 
 

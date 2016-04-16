@@ -7,21 +7,17 @@ client_secret = ''
 
 from .authorization import get_access_token
 from .discovery import recommendations
-from .enrichment import create_content_item, get_content_items, \
-						get_content_item, update_content_item, \
-						delete_content_item, metadata
+from .enrichment import create_content_item, delete_content_item, \
+						get_content_item, get_content_items, \
+						update_content_item, metadata
 
-class Token:
-
-	@classmethod
-	def get_access_token(cls):
-		return get_access_token(client_id, client_secret)
 
 class Discovery:
 
 	@classmethod
 	def recommendations(self, content_item_id):
 		return recommendations(access_token, content_item_id)
+
 
 class Enrichment:
 
@@ -52,3 +48,10 @@ class Enrichment:
 	@classmethod
 	def metadata(cls, text):
 		return metadata(access_token, text)
+
+
+class Token:
+
+	@classmethod
+	def get_access_token(cls):
+		return get_access_token(client_id, client_secret)
