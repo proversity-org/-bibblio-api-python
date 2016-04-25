@@ -48,6 +48,6 @@ def construct_content_item_url(enrichment_url, content_item_id):
 	return enrichment_url + '/' + str(content_item_id)
 
 
-def construct_recommendations_url(enrichment_url, content_item_id):
+def construct_content_recommendations_url(enrichment_url, content_item_id):
 
 	return enrichment_url + '/' + str(content_item_id) + '/recommendations'

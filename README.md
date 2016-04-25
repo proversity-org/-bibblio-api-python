@@ -42,7 +42,11 @@ For more information use [Bibblio API Documentation](http://docs.bibblio.apiary.
 ### Discovery
 
 ```python
-response = bibbliothon.Discovery.recommendations(content_item_id)
+response = bibbliothon.Discovery.content_recommendations(content_item_id)
+```
+
+```python
+response = bibbliothon.Discovery.recommendations(payload)
 ```
 
 ### Enrichment

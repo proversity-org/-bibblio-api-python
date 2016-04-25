@@ -6,7 +6,7 @@ client_id = ''
 client_secret = ''
 
 from .authorization import get_access_token
-from .discovery import recommendations
+from .discovery import content_recommendations, recommendations
 from .enrichment import create_content_item, delete_content_item, \
 						get_content_item, get_content_items, \
 						update_content_item, metadata
@@ -15,8 +15,12 @@ from .enrichment import create_content_item, delete_content_item, \
 class Discovery:
 
 	@classmethod
-	def recommendations(self, content_item_id):
-		return recommendations(access_token, content_item_id)
+	def content_recommendations(self, content_item_id):
+		return content_recommendations(access_token, content_item_id)
+
+	@classmethod
+	def recommendations(self, payload):
+		return recommendations(access_token, payload)
 
 
 class Enrichment:

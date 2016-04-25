@@ -37,34 +37,38 @@ For more information use [Bibblio API Documentation](http://docs.bibblio.apiary.
 * text is a string
 * content_item_id is a string
 
-### Enrichment
-
-```python
-response = bibblio.Enrichment.create_content_item(payload)
-```
-
-```python
-response = bibblio.Enrichment.get_content_items(limit=10, page=1)
-```
-
-```python
-response = bibblio.Enrichment.get_content_item(content_item_id)
-```
-
-```python
-response = bibblio.Enrichment.update_content_item(content_item_id, payload)
-```
-
-```python
-response = bibblio.Enrichment.delete_content_item(content_item_id)
-```
-
-```python
-response = bibblio.Enrichment.metadata(text)
-```
-
 ### Discovery
 
 ```python
-response = bibblio.Discovery.recommendations(content_item_id)
+response = bibbliothon.Discovery.content_recommendations(content_item_id)
+```
+
+```python
+response = bibbliothon.Discovery.recommendations(payload)
+```
+
+### Enrichment
+
+```python
+response = bibbliothon.Enrichment.create_content_item(payload)
+```
+
+```python
+response = bibbliothon.Enrichment.get_content_items(limit=10, page=1)
+```
+
+```python
+response = bibbliothon.Enrichment.get_content_item(content_item_id)
+```
+
+```python
+response = bibbliothon.Enrichment.update_content_item(content_item_id, payload)
+```
+
+```python
+response = bibbliothon.Enrichment.delete_content_item(content_item_id)
+```
+
+```python
+response = bibbliothon.Enrichment.metadata(text)
 ```

@@ -23,7 +23,6 @@ def create_content_item(access_token, payload):
 		'Authorization': 'Bearer ' + str(access_token)
 	}
 
-	payload = create_random_payload(payload)
 	request = requests.post(enrichment_url, json=payload, headers=headers)
 	if request.status_code == 201:
 
