@@ -11,7 +11,7 @@ packages = [
 requires = ['requests']
 
 name = 'bibbliothon'
-version = '1.0.1'
+version = '1.1.0'
 description = 'Python wrapper for Bibblio API.'
 author = 'José Antonio González'
 author_email = 'antonio@proversity.org'

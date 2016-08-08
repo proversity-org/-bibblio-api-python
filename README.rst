@@ -1,30 +1,32 @@
+<img src="https://avatars2.githubusercontent.com/u/13437736?v=3&s=200" width="50px"> [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://proversity.org)
+
 # Bibblio API Python
 Python wrapper of Bibblio API
 
 Register in [Bibblio](bibblio.org) and get your CLIENT_ID and CLIENT_SECRET
 
 ## Install
-```pip install bibblio```
+```pip install bibbliothon```
 
 ## Configuration
 ```python
-import bibblio
+import bibbliothon
 ```
 
 set client_id and client_secret
 
 ```python
-bibblio.client_id = 'YOUR_CLIENT_ID'
+bibbliothon.client_id = 'YOUR_CLIENT_ID'
 ```
 
 ```python
-bibblio.client_secret = 'YOUR_CLIENT_SECRET'
+bibbliothon.client_secret = 'YOUR_CLIENT_SECRET'
 ```
 
 get access_token
 
 ```python
-bibblio.access_token = bibblio.Token.get_access_token()
+bibbliothon.access_token = bibblio.Token.get_access_token()['access_token']
 ```
 
 * the access token has a duration of 5 minutes, remember to update it.
@@ -43,7 +45,7 @@ For more information use [Bibblio API Documentation](http://docs.bibblio.apiary.
 response = bibbliothon.Discovery.content_recommendations(content_item_id)
 ```
 
-```python
+```python (Legacy)
 response = bibbliothon.Discovery.recommendations(payload)
 ```
 
@@ -69,6 +71,6 @@ response = bibbliothon.Enrichment.update_content_item(content_item_id, payload)
 response = bibbliothon.Enrichment.delete_content_item(content_item_id)
 ```
 
-```python
+```python (Legacy)
 response = bibbliothon.Enrichment.metadata(text)
 ```

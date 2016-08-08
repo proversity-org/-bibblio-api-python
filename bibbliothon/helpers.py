@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # coding:utf-8
 
@@ -36,6 +37,7 @@ def construct_content_items_url(enrichment_url, limit, page):
 		if has_page:
 
 			new_enrichment_url += '&' + page_query
+
 	elif has_page:
 
 		new_enrichment_url += '?' + page_query

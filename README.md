@@ -46,7 +46,7 @@ response = bibbliothon.Discovery.content_recommendations(content_item_id)
 ```
 
 ```python
-response = bibbliothon.Discovery.recommendations(payload)
+(Legacy) response = bibbliothon.Discovery.recommendations(payload)
 ```
 
 ### Enrichment
@@ -72,5 +72,5 @@ response = bibbliothon.Enrichment.delete_content_item(content_item_id)
 ```
 
 ```python
-response = bibbliothon.Enrichment.metadata(text)
+(Legacy) response = bibbliothon.Enrichment.metadata(text)
 ```

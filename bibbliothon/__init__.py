@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # coding:utf-8
 
@@ -7,9 +8,10 @@ client_secret = ''
 
 from .authorization import get_access_token
 from .discovery import content_recommendations, recommendations
-from .enrichment import create_content_item, delete_content_item, \
+from .enrichment import create_content_item, \
 						get_content_item, get_content_items, \
-						update_content_item, metadata
+						update_content_item, delete_content_item, \
+						metadata
 
 
 class Discovery:
@@ -19,7 +21,7 @@ class Discovery:
 		return content_recommendations(access_token, content_item_id)
 
 	@classmethod
-	def recommendations(self, payload):
+	def recommendations(self, payload): # (Legacy)
 		return recommendations(access_token, payload)
 
 
@@ -50,7 +52,7 @@ class Enrichment:
 		return delete_content_item(access_token, content_item_id)
 
 	@classmethod
-	def metadata(cls, text):
+	def metadata(cls, text): # (Legacy)
 		return metadata(access_token, text)
 
 

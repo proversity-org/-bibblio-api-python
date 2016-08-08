@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # coding:utf-8
 
@@ -109,8 +110,7 @@ def delete_content_item(access_token, content_item_id):
 	return {'status': request.status_code, 'message': request.text}
 
 
-# Metadata Endpoint
-def metadata(access_token, text):
+def metadata(access_token, text): # (Legacy)
     '''
 	Name: metadata_only
 	Parameters: access_token, text (string)

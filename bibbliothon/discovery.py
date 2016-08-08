@@ -10,7 +10,7 @@ from helpers import construct_content_recommendations_url
 from urls import enrichment_url, recommendations_url
 
 
-# Reconmmendations Endpoints
+# Recommmendations Endpoints
 def content_recommendations(access_token, content_item_id):
 	'''
 	Name: content_recommendations
@@ -29,8 +29,7 @@ def content_recommendations(access_token, content_item_id):
 
 	return {'status': request.status_code, "message": request.text}
 
-
-def recommendations(access_token, payload):
+def recommendations(access_token, payload): # (Legacy)
 	'''
 	Name: recommendations
 	Parameters: access_token, payload
