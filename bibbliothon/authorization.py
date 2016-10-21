@@ -6,7 +6,7 @@ import json
 import requests
 
 # Bibblio Python imports
-from urls import token_url
+from .urls import token_url
 
 # Token Endpoint
 def get_access_token(client_id, client_secret):
