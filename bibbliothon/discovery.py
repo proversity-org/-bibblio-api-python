@@ -6,8 +6,8 @@ import json
 import requests
 
 # Bibblio Python imports
-from helpers import construct_content_recommendations_url
-from urls import enrichment_url, recommendations_url
+from .helpers import construct_content_recommendations_url
+from .urls import enrichment_url, recommendations_url
 
 
 # Recommmendations Endpoints
